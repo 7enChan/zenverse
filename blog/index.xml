@@ -18,5 +18,14 @@
 </description>
     </item>
     
+    <item>
+      <title>My First Post</title>
+      <link>https://meta.%E5%AE%99.space/blog/blog2/</link>
+      <pubDate>Wed, 10 Nov 2021 10:56:28 +0800</pubDate>
+      <guid>https://meta.%E5%AE%99.space/blog/blog2/</guid>
+      <description>&lt;p&gt;Hello, Universe.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
