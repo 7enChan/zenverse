@@ -5,7 +5,7 @@
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 10 Nov 2021 10:56:28 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Nov 2021 11:14:19 +0800</lastBuildDate>
     <atom:link href="https://dao.%E5%AE%99.space/podcast/index.xml" rel="self" type="application/rss+xml" />
     
     
@@ -17,31 +17,12 @@
     <itunes:explicit>false</itunes:explicit>
     
     <item>
-      <title>Hahah</title>
-      <itunes:title>Hahah</itunes:title>
-      <link>https://dao.%E5%AE%99.space/podcast/podcast/</link>
-      <guid>https://dao.%E5%AE%99.space/podcast/podcast/</guid>
-      <pubDate>Wed, 10 Nov 2021 10:56:28 +0800</pubDate>
-      <description>&lt;p&gt;Hello, Universe.&lt;/p&gt;
-</description>
-      
-      
-      
-      
-      
-      
-      
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    
-    <item>
-      <title>Hahah</title>
-      <itunes:title>Hahah</itunes:title>
-      <link>https://dao.%E5%AE%99.space/podcast/podcast%E7%9A%84%E5%89%AF%E6%9C%AC/</link>
-      <guid>https://dao.%E5%AE%99.space/podcast/podcast%E7%9A%84%E5%89%AF%E6%9C%AC/</guid>
-      <pubDate>Wed, 10 Nov 2021 10:56:28 +0800</pubDate>
-      <description>&lt;p&gt;Hello, Universe.&lt;/p&gt;
-</description>
+      <title>希声</title>
+      <itunes:title>希声</itunes:title>
+      <link>https://dao.%E5%AE%99.space/podcast/quite/</link>
+      <guid>https://dao.%E5%AE%99.space/podcast/quite/</guid>
+      <pubDate>Thu, 11 Nov 2021 11:14:19 +0800</pubDate>
+      <description></description>
       
       
       
