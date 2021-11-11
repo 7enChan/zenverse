@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on DAOverse</title>
     <link>https://dao.%E5%AE%99.space/categories/</link>
     <description>Recent content in Categories on DAOverse</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-GB</language>
-    <atom:link href="https://dao.%E5%AE%99.space/categories/index.xml" rel="self" type="application/rss+xml" />
-    
+    <language>en-GB</language><atom:link href="https://dao.%E5%AE%99.space/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

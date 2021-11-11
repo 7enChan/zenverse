@@ -1,36 +1,19 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>DAOverse</title>
+    <title>Podcast on DAOverse</title>
     <link>https://dao.%E5%AE%99.space/podcast/</link>
-    <description></description>
+    <description>Recent content in Podcast on DAOverse</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 01 Jan 2021 11:14:19 +0800</lastBuildDate>
-    <atom:link href="https://dao.%E5%AE%99.space/podcast/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    
-    
-    
-    
-    
-    <itunes:explicit>false</itunes:explicit>
-    
+    <lastBuildDate>Fri, 01 Jan 2021 11:14:19 +0800</lastBuildDate><atom:link href="https://dao.%E5%AE%99.space/podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>希声</title>
-      <itunes:title>希声</itunes:title>
       <link>https://dao.%E5%AE%99.space/podcast/quite/</link>
-      <guid>https://dao.%E5%AE%99.space/podcast/quite/</guid>
       <pubDate>Fri, 01 Jan 2021 11:14:19 +0800</pubDate>
+      
+      <guid>https://dao.%E5%AE%99.space/podcast/quite/</guid>
       <description></description>
-      
-      
-      
-      
-      
-      
-      
-      <itunes:explicit>false</itunes:explicit>
     </item>
     
   </channel>
