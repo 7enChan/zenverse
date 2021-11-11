@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on 元宇宙</title>
-    <link>https://meta.%E5%AE%99.space/blog/</link>
-    <description>Recent content in Blog on 元宇宙</description>
+    <title>Blog on DAOverse</title>
+    <link>https://dao.%E5%AE%99.space/blog/</link>
+    <description>Recent content in Blog on DAOverse</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Wed, 10 Nov 2021 10:56:28 +0800</lastBuildDate>
-    <atom:link href="https://meta.%E5%AE%99.space/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dao.%E5%AE%99.space/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My First Post</title>
-      <link>https://meta.%E5%AE%99.space/blog/blog/</link>
+      <link>https://dao.%E5%AE%99.space/blog/blog/</link>
       <pubDate>Wed, 10 Nov 2021 10:56:28 +0800</pubDate>
-      <guid>https://meta.%E5%AE%99.space/blog/blog/</guid>
+      <guid>https://dao.%E5%AE%99.space/blog/blog/</guid>
       <description>&lt;p&gt;Hello, Universe.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://meta.%E5%AE%99.space/blog/blog2/</link>
+      <link>https://dao.%E5%AE%99.space/blog/blog2/</link>
       <pubDate>Wed, 10 Nov 2021 10:56:28 +0800</pubDate>
-      <guid>https://meta.%E5%AE%99.space/blog/blog2/</guid>
+      <guid>https://dao.%E5%AE%99.space/blog/blog2/</guid>
       <description>&lt;p&gt;Hello, Universe.&lt;/p&gt;
 </description>
     </item>
