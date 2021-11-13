@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Home on 宙</title>
-    <link>https://%E5%AE%99.space/</link>
-    <description>Recent content in Home on 宙</description>
+    <title>Foto on 宙</title>
+    <link>https://%E5%AE%99.space/foto/</link>
+    <description>Recent content in Foto on 宙</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 11 Nov 2021 10:57:28 +0800</lastBuildDate><atom:link href="https://%E5%AE%99.space/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Nov 2021 10:57:28 +0800</lastBuildDate><atom:link href="https://%E5%AE%99.space/foto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>人</title>
       <link>https://%E5%AE%99.space/foto/%E4%BA%BA/</link>
@@ -69,35 +69,6 @@
       <guid>https://%E5%AE%99.space/foto/%E5%BD%B1/</guid>
       <description>            </description>
     </item>
-    
-    <item>
-      <title>希声</title>
-      <link>https://%E5%AE%99.space/podcast/quite/</link>
-      <pubDate>Thu, 11 Nov 2021 09:14:19 +0800</pubDate>
-      
-      <guid>https://%E5%AE%99.space/podcast/quite/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>忘言</title>
-      <link>https://%E5%AE%99.space/blog/slient/</link>
-      <pubDate>Thu, 11 Nov 2021 09:14:19 +0800</pubDate>
-      
-      <guid>https://%E5%AE%99.space/blog/slient/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://%E5%AE%99.space/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://%E5%AE%99.space/about/</guid>
-      <description>​</description>
-    </item>
-    
-    
     
   </channel>
 </rss>
