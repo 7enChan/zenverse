@@ -2,37 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://%E5%AE%99.space/foto/</loc>
-    <lastmod>2021-11-14T18:31:28+08:00</lastmod>
+    <loc>https://%E5%AE%99.space/blog/</loc>
+    <lastmod>2021-11-11T09:14:19+08:00</lastmod>
   </url><url>
     <loc>https://%E5%AE%99.space/</loc>
-    <lastmod>2021-11-14T18:31:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/foto/%E6%A0%91/</loc>
-    <lastmod>2021-11-14T18:31:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/foto/%E4%BA%BA/</loc>
-    <lastmod>2021-11-11T10:57:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/foto/%E9%BB%91%E7%99%BD/</loc>
-    <lastmod>2021-11-11T10:56:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/foto/%E9%9B%AA/</loc>
-    <lastmod>2021-11-11T10:55:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/foto/%E7%A7%8B/</loc>
-    <lastmod>2021-11-11T10:54:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/foto/%E8%89%B2%E5%BD%A9/</loc>
-    <lastmod>2021-11-11T10:53:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/foto/%E6%84%8F/</loc>
-    <lastmod>2021-11-11T10:52:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/foto/%E5%BD%B1/</loc>
-    <lastmod>2021-11-11T10:51:28+08:00</lastmod>
-  </url><url>
-    <loc>https://%E5%AE%99.space/blog/</loc>
     <lastmod>2021-11-11T09:14:19+08:00</lastmod>
   </url><url>
     <loc>https://%E5%AE%99.space/podcast/</loc>
@@ -49,6 +22,8 @@
     <loc>https://%E5%AE%99.space/archives/</loc>
   </url><url>
     <loc>https://%E5%AE%99.space/categories/</loc>
+  </url><url>
+    <loc>https://%E5%AE%99.space/foto/</loc>
   </url><url>
     <loc>https://%E5%AE%99.space/search/</loc>
   </url><url>
