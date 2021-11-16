@@ -19,6 +19,9 @@
   </url><url>
     <loc>https://%E5%AE%99.space/about/</loc>
   </url><url>
+    <loc>https://%E5%AE%99.space/obsidianlog/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://%E5%AE%99.space/archives/</loc>
   </url><url>
     <loc>https://%E5%AE%99.space/categories/</loc>
