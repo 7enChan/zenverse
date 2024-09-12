@@ -34,7 +34,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: flex-start; /* 改为左对齐 */
+  justify-content: flex-start;
   align-items: center;
   max-width: 980px;
   margin: 0 auto;
@@ -47,14 +47,9 @@ nav {
   align-items: center;
 }
 
-.logo img {
-  height: 30px; /* 调整logo大小 */
-  margin-right: 10px;
-}
-
 .logo a {
   font-size: 21px;
-  font-weight: normal; /* 改为正常字体 */
+  font-weight: normal;
   color: var(--text-color);
   text-decoration: none;
 }
