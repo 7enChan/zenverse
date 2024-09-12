@@ -47,6 +47,11 @@ nav {
   align-items: center;
 }
 
+.logo img {
+  height: 30px; /* 调整为适当的高度 */
+  margin-right: 10px;
+}
+
 .logo a {
   font-size: 21px;
   font-weight: normal;
