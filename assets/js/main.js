@@ -9,15 +9,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-
-    // 联系表单提交
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // 这里可以添加表单提交逻辑,例如使用AJAX发送数据到服务器
-            alert('感谢您的留言!我们会尽快回复您。');
-            contactForm.reset();
-        });
-    }
 });
