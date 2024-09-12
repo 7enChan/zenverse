@@ -46,12 +46,12 @@ nav {
   display: flex;
   align-items: center;
   height: 100%;
+  padding-top: 10px; /* 将padding-top移到这里 */
 }
 
 .logo img {
   height: 30px; /* 调整为适当的高度 */
   margin-right: 10px;
-  padding-top: 10px
 }
 
 .logo a {
@@ -62,7 +62,7 @@ nav {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 10px; /* 保持标题的上边距 */
+  padding-top: 0; /* 移除这里的padding-top */
 }
 
 /* 主要内容样式 */
