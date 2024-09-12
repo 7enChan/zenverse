@@ -177,8 +177,8 @@ footer {
 }
 
 footer p {
-  /* 移除 display: flex */
   font-size: 12px;
+  margin: 0; /* 添加这行以移除默认的段落边距 */
 }
 
 footer a {
@@ -229,7 +229,7 @@ footer a {
     margin-bottom: 10px;
 }
 
-.privacy-policy-page p, .privacy-policy-page ul {
+.privacy-policy-page p:not(footer p), .privacy-policy-page ul { /* 修改这行 */
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
