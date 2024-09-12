@@ -169,7 +169,7 @@ footer {
   background-color: transparent; /* 移除背景色 */
   text-align: center;
   padding: 20px 0;
-  font-size: 11px; /* 减小字体大小 */
+  font-size: 9px; /* 进一步减小字体大小 */
   line-height: 1.33337;
   font-weight: 400;
   letter-spacing: -0.01em;
