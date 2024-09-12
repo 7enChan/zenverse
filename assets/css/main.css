@@ -248,3 +248,32 @@ footer a {
 .privacy-policy-page .privacy-content {
     margin-top: 30px;
 }
+
+/* 404页面样式 */
+#error-404 {
+    text-align: center;
+    padding: 80px 20px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#error-404 h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+#error-404 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#error-404 a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#error-404 a:hover {
+    text-decoration: underline;
+}
