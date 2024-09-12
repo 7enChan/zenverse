@@ -169,7 +169,7 @@ footer {
   background-color: transparent;
   text-align: center;
   padding: 20px 0;
-  font-size: 12px;  /* 减小字体大小 */
+  font-size: 12px;
   line-height: 1.33337;
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -177,17 +177,15 @@ footer {
 }
 
 footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;  /* 确保段落文字也使用较小的字体 */
+  /* 移除 display: flex */
+  font-size: 12px;
 }
 
 footer a {
   color: #515154;
   text-decoration: none;
   margin-left: 10px;
-  font-size: 12px;  /* 确保链接文字也使用较小的字体 */
+  font-size: 12px;
 }
 
 /* 响应式设计 */
