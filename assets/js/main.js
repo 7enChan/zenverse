@@ -20,14 +20,4 @@ document.addEventListener('DOMContentLoaded', function() {
             contactForm.reset();
         });
     }
-
-    // 响应式导航菜单
-    const navToggle = document.createElement('button');
-    navToggle.textContent = '菜单';
-    navToggle.classList.add('nav-toggle');
-    document.querySelector('nav').prepend(navToggle);
-
-    navToggle.addEventListener('click', function() {
-        document.querySelector('nav ul').classList.toggle('show');
-    });
 });
