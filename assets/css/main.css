@@ -34,7 +34,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* 改为左对齐 */
   align-items: center;
   max-width: 980px;
   margin: 0 auto;
@@ -42,32 +42,21 @@ nav {
   height: 44px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px; /* 调整logo大小 */
+  margin-right: 10px;
+}
+
 .logo a {
   font-size: 21px;
   font-weight: 600;
   color: var(--text-color);
   text-decoration: none;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 30px;
-}
-
-nav ul li a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: 12px;
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
-nav ul li a:hover {
-  opacity: 1;
 }
 
 /* 主要内容样式 */
@@ -274,14 +263,16 @@ footer {
   color: #86868b;
 }
 
-footer nav {
-  margin-top: 10px;
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer nav a {
+footer a {
   color: #515154;
   text-decoration: none;
-  margin: 0 10px;
+  margin-left: 10px;
 }
 
 /* 响应式设计 */
