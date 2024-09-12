@@ -197,3 +197,48 @@ footer a {
     max-width: 120px;
   }
 }
+
+/* 隐私政策页面特定样式 */
+.privacy-policy-page #privacy-policy {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.privacy-policy-page h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.privacy-policy-page h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.privacy-policy-page h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.privacy-policy-page p, .privacy-policy-page ul {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.privacy-policy-page ul {
+    padding-left: 20px;
+}
+
+.privacy-policy-page .language-selector {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-page .privacy-content {
+    margin-top: 30px;
+}
