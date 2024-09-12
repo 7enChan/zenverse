@@ -162,6 +162,35 @@ p {
   height: auto;
   border-radius: 20px;
   box-shadow: none; /* 移除阴影 */
+  flex-basis: calc(50% - 10px); /* 默认两列布局 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  .app-screenshots img {
+    max-width: 100%;
+    flex-basis: 100%; /* 一列布局 */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-screenshots img {
+    flex-basis: calc(50% - 10px); /* 两列布局 */
+  }
+}
+
+@media (min-width: 1025px) {
+  .app-screenshots img {
+    flex-basis: calc(25% - 15px); /* 四列布局 */
+  }
 }
 
 /* 页脚样式 */
@@ -186,21 +215,6 @@ footer a {
   text-decoration: none;
   margin-left: 10px;
   font-size: 12px;
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 32px;
-  }
-
-  #hero p {
-    font-size: 16px;
-  }
-
-  .app-screenshots img {
-    max-width: 120px;
-  }
 }
 
 /* 隐私政策页面特定样式 */
