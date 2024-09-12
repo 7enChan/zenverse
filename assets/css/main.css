@@ -151,17 +151,18 @@ p {
 }
 
 .app-screenshots {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 .app-screenshots img {
+  width: 100%;
   max-width: 200px;
   height: auto;
   border-radius: 20px;
-  box-shadow: none; /* 移除阴影 */
+  box-shadow: none;
 }
 
 /* 页脚样式 */
@@ -198,6 +199,10 @@ footer a {
     font-size: 16px;
   }
 
+  .app-screenshots {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
   .app-screenshots img {
     max-width: 120px;
   }
