@@ -100,7 +100,7 @@ p {
 /* 英雄区域样式 */
 #hero {
   text-align: center;
-  padding: 80px 20px 40px; /* 减少底部padding */
+  padding: 120px 20px 40px; /* 增加顶部padding从80px到120px */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -167,6 +167,10 @@ p {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+  #hero {
+    padding-top: 100px; /* 在移动设备上稍微减少顶部padding */
+  }
+
   #hero h1 {
     font-size: 32px;
   }
