@@ -115,6 +115,10 @@ p {
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 20px;
+  white-space: nowrap; /* 保持在一行 */
+  overflow: visible; /* 允许内容溢出 */
+  text-overflow: clip; /* 移除省略号 */
+  max-width: 100%; /* 确保最大宽度为容器宽度 */
 }
 
 #hero p {
@@ -179,6 +183,7 @@ p {
 
   #hero h1 {
     font-size: 32px;
+    white-space: normal; /* 在小屏幕上允许换行 */
   }
 
   #hero p {
