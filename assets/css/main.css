@@ -272,3 +272,40 @@ footer a {
 .privacy-policy-page .privacy-content {
     margin-top: 30px;
 }
+
+/* 在文件末尾添加以下样式 */
+
+/* 404错误页面样式 */
+.error-page #error-404 {
+    text-align: center;
+    padding: 120px 20px 40px; /* 增加顶部padding,与主页hero section一致 */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.error-page #error-404 h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px; /* 增加标题下方的间距 */
+}
+
+.error-page #error-404 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .error-page #error-404 {
+        padding-top: 100px; /* 在移动设备上稍微减少顶部padding */
+    }
+
+    .error-page #error-404 h1 {
+        font-size: 32px;
+    }
+
+    .error-page #error-404 p {
+        font-size: 16px;
+    }
+}
