@@ -106,8 +106,8 @@ p {
 /* 英雄区域样式 */
 #hero {
   text-align: center;
-  padding: 120px 20px 40px;
-  max-width: 980px; /* 增加最大宽度 */
+  padding: 120px 20px 40px; /* 增加顶部padding从80px到120px */
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -157,7 +157,6 @@ p {
 #app-preview {
   overflow: visible;
   margin-top: -50px; /* 使截图位置靠上 */
-  padding: 0 20px; /* 添加左右内边距 */
 }
 
 .app-screenshots {
@@ -165,8 +164,6 @@ p {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  max-width: 980px; /* 限制最大宽度 */
-  margin: 0 auto; /* 居中对齐 */
 }
 
 .app-screenshots img {
@@ -174,7 +171,7 @@ p {
   height: auto;
   border-radius: 20px;
   box-shadow: none; /* 移除阴影 */
-  flex-basis: calc(25% - 15px); /* 四列布局 */
+  flex-basis: calc(50% - 10px); /* 默认两列布局 */
 }
 
 /* 响应式设计 */
@@ -184,8 +181,7 @@ p {
   }
 
   #hero h1 {
-    font-size: 32px; /* 在小屏幕上减小字体大小 */
-    white-space: normal; /* 在小屏幕上允许换行 */
+    font-size: 32px;
   }
 
   #hero p {
@@ -207,18 +203,6 @@ p {
 @media (min-width: 1025px) {
   .app-screenshots img {
     flex-basis: calc(25% - 15px); /* 四列布局 */
-  }
-}
-
-@media (max-width: 980px) {
-  .app-screenshots img {
-    flex-basis: calc(50% - 10px); /* 两列布局 */
-  }
-}
-
-@media (max-width: 480px) {
-  .app-screenshots img {
-    flex-basis: 100%; /* 一列布局 */
   }
 }
 
