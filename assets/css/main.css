@@ -112,12 +112,13 @@ p {
 }
 
 #hero h1 {
-  font-size: 48px;
+  font-size: 36px; /* 稍微减小字体大小 */
   line-height: 1.2;
   margin-bottom: 20px;
-  white-space: nowrap; /* 防止标题换行 */
-  overflow: hidden; /* 隐藏溢出内容 */
-  text-overflow: ellipsis; /* 在溢出时显示省略号 */
+  white-space: nowrap; /* 保持在一行 */
+  overflow: visible; /* 允许内容溢出 */
+  text-overflow: clip; /* 移除省略号 */
+  max-width: 100%; /* 确保最大宽度为容器宽度 */
 }
 
 #hero p {
