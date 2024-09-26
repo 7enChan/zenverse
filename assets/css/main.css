@@ -39,18 +39,18 @@ nav {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 22px;
-  height: 54px; /* 增加导航栏高度 */
+  height: 54px;
 }
 
 .logo {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 10px; /* 将padding-top移到这里 */
+  padding-top: 10px;
 }
 
 .logo img {
-  height: 30px; /* 调整为适当的高度 */
+  height: 30px;
   margin-right: 10px;
 }
 
@@ -62,7 +62,7 @@ nav {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 0; /* 移除这里的padding-top */
+  padding-top: 0;
 }
 
 /* 主要内容样式 */
@@ -106,7 +106,7 @@ p {
 /* 英雄区域样式 */
 #hero {
   text-align: center;
-  padding: 120px 20px 40px; /* 增加顶部padding从80px到120px */
+  padding: 120px 20px 40px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -115,10 +115,10 @@ p {
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 20px;
-  white-space: nowrap; /* 保持在一行 */
-  overflow: visible; /* 允许内容溢出 */
-  text-overflow: clip; /* 移除省略号 */
-  max-width: 100%; /* 确保最大宽度为容器宽度 */
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+  max-width: 100%;
 }
 
 #hero p {
@@ -157,7 +157,7 @@ p {
 /* 应用预览样式 */
 #app-preview {
   overflow: visible;
-  margin-top: -50px; /* 使截图位置靠上 */
+  margin-top: -50px;
 }
 
 .app-screenshots {
@@ -171,41 +171,8 @@ p {
   max-width: 200px;
   height: auto;
   border-radius: 20px;
-  box-shadow: none; /* 移除阴影 */
-  flex-basis: calc(50% - 10px); /* 默认两列布局 */
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-  #hero {
-    padding-top: 100px; /* 在移动设备上稍微减少顶部padding */
-  }
-
-  #hero h1 {
-    font-size: 32px;
-    white-space: normal; /* 在小屏幕上允许换行 */
-  }
-
-  #hero p {
-    font-size: 16px;
-  }
-
-  .app-screenshots img {
-    max-width: 100%;
-    flex-basis: 100%; /* 一列布局 */
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .app-screenshots img {
-    flex-basis: calc(50% - 10px); /* 两列布局 */
-  }
-}
-
-@media (min-width: 1025px) {
-  .app-screenshots img {
-    flex-basis: calc(25% - 15px); /* 四列布局 */
-  }
+  box-shadow: none;
+  flex-basis: calc(50% - 10px);
 }
 
 /* 页脚样式 */
@@ -239,8 +206,130 @@ footer span.separator {
   margin: 0 10px;
 }
 
-/* 响应式调整 */
+/* 隐私政策和致谢页面通用样式 */
+.privacy-policy-page #privacy-policy,
+.acknowledgments-page #acknowledgments {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 20px 20px;
+  text-align: left;
+}
+
+.privacy-policy-page h1,
+.acknowledgments-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.privacy-policy-page h2,
+.acknowledgments-page h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.privacy-policy-page h3,
+.acknowledgments-page h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.privacy-policy-page p:not(footer p),
+.privacy-policy-page ul,
+.acknowledgments-page p:not(footer p),
+.acknowledgments-page ul,
+.acknowledgments-page ol {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.privacy-policy-page ul,
+.acknowledgments-page ul,
+.acknowledgments-page ol {
+  padding-left: 20px;
+}
+
+.privacy-policy-page a,
+.acknowledgments-page a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.privacy-policy-page a:hover,
+.acknowledgments-page a:hover {
+  text-decoration: underline;
+}
+
+.language-selector {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.language-selector select {
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: var(--entry);
+  color: var(--primary);
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 1em auto;
+  padding-right: 2.5em;
+}
+
+/* 404错误页面样式 */
+.error-page #error-404 {
+  text-align: center;
+  padding: 120px 20px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error-page #error-404 h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.error-page #error-404 p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* 响应式设计 */
 @media (max-width: 768px) {
+  #hero, .error-page #error-404 {
+    padding-top: 100px;
+  }
+
+  #hero h1, .error-page #error-404 h1 {
+    font-size: 32px;
+    white-space: normal;
+  }
+
+  #hero p, .error-page #error-404 p {
+    font-size: 16px;
+  }
+
+  .app-screenshots img {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
   footer {
     padding: 20px 0;
   }
@@ -254,147 +343,14 @@ footer span.separator {
   }
 }
 
-/* 隐私政策页面特定样式 */
-.privacy-policy-page #privacy-policy {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 100px 20px 20px; /* 修改顶部内边距 */
-    text-align: left;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-screenshots img {
+    flex-basis: calc(50% - 10px);
+  }
 }
 
-.privacy-policy-page h1 {
-    font-size: 28px;
-    margin-bottom: 10px;  /* 减小底部边距 */
-    text-align: left;
-}
-
-.privacy-policy-page h2 {
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-.privacy-policy-page h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.privacy-policy-page p:not(footer p), .privacy-policy-page ul { /* 修改这行 */
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.privacy-policy-page ul {
-    padding-left: 20px;
-}
-
-.privacy-policy-page .language-selector {
-    text-align: right;
-    margin-bottom: 20px;
-    margin-top: 10px;  /* 添加顶部边距 */
-}
-
-.privacy-policy-page .privacy-content {
-    margin-top: 30px;
-}
-
-/* 致谢页面特定样式 */
-.acknowledgments-page #acknowledgments {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 100px 20px 20px;
-    text-align: left;
-}
-
-.acknowledgments-page #acknowledgments p, 
-.acknowledgments-page #acknowledgments ul, 
-.acknowledgments-page #acknowledgments ol {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* 确保页脚样式在致谢页面上也能正确应用 */
-.acknowledgments-page footer p {
-    font-size: 14px;
-    color: #86868b;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.acknowledgments-page h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.acknowledgments-page h2 {
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-.acknowledgments-page h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.acknowledgments-page #acknowledgments p, 
-.acknowledgments-page #acknowledgments ul, 
-.acknowledgments-page #acknowledgments ol {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.acknowledgments-page #acknowledgments ul, 
-.acknowledgments-page #acknowledgments ol {
-    padding-left: 20px;
-}
-
-.acknowledgments-page #acknowledgments a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.acknowledgments-page #acknowledgments a:hover {
-    text-decoration: underline;
-}
-
-/* 404错误页面样式 */
-.error-page #error-404 {
-    text-align: center;
-    padding: 120px 20px 40px; /* 增加顶部padding,与主页hero section一致 */
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.error-page #error-404 h1 {
-    font-size: 48px;
-    line-height: 1.2;
-    margin-bottom: 20px; /* 增加标题下方的间距 */
-}
-
-.error-page #error-404 p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    .error-page #error-404 {
-        padding-top: 100px; /* 在移动设备上稍微减少顶部padding */
-    }
-
-    .error-page #error-404 h1 {
-        font-size: 32px;
-    }
-
-    .error-page #error-404 p {
-        font-size: 16px;
-    }
+@media (min-width: 1025px) {
+  .app-screenshots img {
+    flex-basis: calc(25% - 15px);
+  }
 }

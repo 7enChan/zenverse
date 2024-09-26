@@ -9,6 +9,41 @@
     <link rel="canonical" href="https://%E5%AE%99.space/acknowledgments/">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="icon" href="/favicon.ico">
+    <style>
+        .language-selector {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .language-selector select {
+            padding: 5px 10px;
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            background-color: var(--entry);
+            color: var(--primary);
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.7em top 50%;
+            background-size: 1em auto;
+            padding-right: 2.5em;
+        }
+        .acknowledgments-content {
+            display: none;
+        }
+        .acknowledgments-content.active {
+            display: block;
+        }
+        #acknowledgments {
+            padding-top: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,119 +59,351 @@
     <main>
         <section id="acknowledgments">
             <h1>音效致谢</h1>
-            <p>Breathe2Heal 应用中使用了以下音效资源，我们在此表示衷心的感谢：</p>
+            <div class="language-selector">
+                <select onchange="switchLanguage(this.value)">
+                    <option value="zh-CN">简体中文</option>
+                    <option value="zh-TW">繁體中文</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div id="acknowledgments-zh-CN" class="acknowledgments-content active">
+                <!-- 简体中文内容 -->
+                <p>Breathe2Heal 应用中使用了以下音效资源，我们在此表示衷心的感谢：</p>
 
-            <h2>吸气声音</h2>
-            <ol>
-                <li>
-                    <h3>罄</h3>
-                    <ul>
-                        <li>描述: 清脆的敲击_叮__磬_单音</li>
-                        <li>作者: 声音科学</li>
-                        <li>来源: <a href="https://www.aigei.com/space/478125" target="_blank">https://www.aigei.com/space/478125</a></li>
-                        <li>许可: Creative Commons 0</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>颂钵</h3>
-                    <ul>
-                        <li>描述: Tibetan singing bowl</li>
-                        <li>作者: itinerantmonk108</li>
-                        <li>来源: <a href="https://freesound.org/s/553049/" target="_blank">https://freesound.org/s/553049/</a></li>
-                        <li>许可: Creative Commons 0</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>丁夏</h3>
-                    <ul>
-                        <li>描述: Tingsha Cymbal</li>
-                        <li>作者: steffcaffrey</li>
-                        <li>来源: <a href="https://freesound.org/s/435074/" target="_blank">https://freesound.org/s/435074/</a></li>
-                        <li>许可: Creative Commons 0</li>
-                    </ul>
-                </li>
-            </ol>
+                <h2>吸气声音</h2>
+                <ol>
+                    <li>
+                        <h3>罄</h3>
+                        <ul>
+                            <li>描述: 清脆的敲击_叮__磬_单音</li>
+                            <li>作者: 声音科学</li>
+                            <li>来源: <a href="https://www.aigei.com/space/478125" target="_blank">https://www.aigei.com/space/478125</a></li>
+                            <li>许可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>颂钵</h3>
+                        <ul>
+                            <li>描述: Tibetan singing bowl</li>
+                            <li>作者: itinerantmonk108</li>
+                            <li>来源: <a href="https://freesound.org/s/553049/" target="_blank">https://freesound.org/s/553049/</a></li>
+                            <li>许可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>丁夏</h3>
+                        <ul>
+                            <li>描述: Tingsha Cymbal</li>
+                            <li>作者: steffcaffrey</li>
+                            <li>来源: <a href="https://freesound.org/s/435074/" target="_blank">https://freesound.org/s/435074/</a></li>
+                            <li>许可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                </ol>
 
-            <h2>呼气声音</h2>
-            <ol>
-                <li>
-                    <h3>鼓</h3>
-                    <ul>
-                        <li>描述: 佛鼓</li>
-                        <li>作者: 瑞莱宝音乐</li>
-                        <li>来源: <a href="https://www.aigei.com/space/10070445" target="_blank">https://www.aigei.com/space/10070445</a></li>
-                        <li>授权码: LC_172727118387</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>雨声器</h3>
-                    <ul>
-                        <li>描述: rain stick</li>
-                        <li>作者: nytro</li>
-                        <li>来源: <a href="https://freesound.org/s/21567/" target="_blank">https://freesound.org/s/21567/</a></li>
-                        <li>许可: Creative Commons 0</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>铜锣</h3>
-                    <ul>
-                        <li>描述: Orchestral Concert TamTam Gong</li>
-                        <li>作者: pjcohen</li>
-                        <li>来源: <a href="https://freesound.org/s/413621/" target="_blank">https://freesound.org/s/413621/</a></li>
-                        <li>许可: Attribution 4.0</li>
-                    </ul>
-                </li>
-            </ol>
+                <h2>呼气声音</h2>
+                <ol>
+                    <li>
+                        <h3>鼓</h3>
+                        <ul>
+                            <li>描述: 佛鼓</li>
+                            <li>作者: 瑞莱宝音乐</li>
+                            <li>来源: <a href="https://www.aigei.com/space/10070445" target="_blank">https://www.aigei.com/space/10070445</a></li>
+                            <li>授权码: LC_172727118387</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>雨声器</h3>
+                        <ul>
+                            <li>描述: rain stick</li>
+                            <li>作者: nytro</li>
+                            <li>来源: <a href="https://freesound.org/s/21567/" target="_blank">https://freesound.org/s/21567/</a></li>
+                            <li>许可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>铜锣</h3>
+                        <ul>
+                            <li>描述: Orchestral Concert TamTam Gong</li>
+                            <li>作者: pjcohen</li>
+                            <li>来源: <a href="https://freesound.org/s/413621/" target="_blank">https://freesound.org/s/413621/</a></li>
+                            <li>许可: Attribution 4.0</li>
+                        </ul>
+                    </li>
+                </ol>
 
-            <h2>屏气声音</h2>
-            <ol>
-                <li>
-                    <h3>水滴</h3>
-                    <ul>
-                        <li>描述: 水滴落下</li>
-                        <li>作者: 赵千仪</li>
-                        <li>来源: <a href="https://www.aigei.com/space/10350506" target="_blank">https://www.aigei.com/space/10350506</a></li>
-                        <li>许可: Creative Commons 0</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>木鱼</h3>
-                    <ul>
-                        <li>描述: 木鱼</li>
-                        <li>作者: 声音科学</li>
-                        <li>来源: <a href="https://www.aigei.com/space/478125" target="_blank">https://www.aigei.com/space/478125</a></li>
-                        <li>许可: Creative Commons 0</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>击木</h3>
-                    <ul>
-                        <li>描述: Claves</li>
-                        <li>作者: juskiddink</li>
-                        <li>来源: <a href="https://freesound.org/s/130853/" target="_blank">https://freesound.org/s/130853/</a></li>
-                        <li>许可: Attribution 4.0</li>
-                    </ul>
-                </li>
-            </ol>
+                <h2>屏气声音</h2>
+                <ol>
+                    <li>
+                        <h3>水滴</h3>
+                        <ul>
+                            <li>描述: 水滴落下</li>
+                            <li>作者: 赵千仪</li>
+                            <li>来源: <a href="https://www.aigei.com/space/10350506" target="_blank">https://www.aigei.com/space/10350506</a></li>
+                            <li>许可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>木鱼</h3>
+                        <ul>
+                            <li>描述: 木鱼</li>
+                            <li>作者: 声音科学</li>
+                            <li>来源: <a href="https://www.aigei.com/space/478125" target="_blank">https://www.aigei.com/space/478125</a></li>
+                            <li>许可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>击木</h3>
+                        <ul>
+                            <li>描述: Claves</li>
+                            <li>作者: juskiddink</li>
+                            <li>来源: <a href="https://freesound.org/s/130853/" target="_blank">https://freesound.org/s/130853/</a></li>
+                            <li>许可: Attribution 4.0</li>
+                        </ul>
+                    </li>
+                </ol>
 
-            <h2>许可说明</h2>
-            <ul>
-                <li>Creative Commons 0 (CC0): 这些作品已被作者dedicat到公共领域。您可以复制、修改、分发和执行这些作品，甚至用于商业目的，都无需征得许可。</li>
-                <li>Attribution 4.0 International (CC BY 4.0): 您可以自由地分享和改编这些作品，即使是出于商业目的。但您必须给予适当的署名，提供许可证的链接，并指出是否进行了修改。</li>
-            </ul>
+                <h2>许可说明</h2>
+                <ul>
+                    <li>Creative Commons 0 (CC0): 这些作品已被作者dedicat到公共领域。您可以复制、修改、分发和执行这些作品，甚至用于商业目的，都无需征得许可。</li>
+                    <li>Attribution 4.0 International (CC BY 4.0): 您可以自由地分享和改编这些作品，即使是出于商业目的。但您必须给予适当的署名，提供许可证的链接，并指出是否进行了修改。</li>
+                </ul>
 
-            <h2>特别声明</h2>
-            <p>"鼓" 音效由瑞莱宝音乐提供，我们已获得授权使用。感谢瑞莱宝音乐的慷慨授权。</p>
+                <h2>特别声明</h2>
+                <p>"鼓" 音效由瑞莱宝音乐提供，我们已获得授权使用。感谢瑞莱宝音乐的慷慨授权。</p>
 
-            <p>我们对所有音效创作者表示诚挚的感谢，感谢他们为 Breathe2Heal 应用增添了丰富的听觉体验！如果您认为我们的使用有任何问题，请联系我们进行更正。</p>
+                <p>我们对所有音效创作者表示诚挚的感谢，感谢他们为 Breathe2Heal 应用增添了丰富的听觉体验！如果您认为我们的使用有任何问题，请联系我们进行更正。</p>
+            </div>
+            <div id="acknowledgments-zh-TW" class="acknowledgments-content">
+                <!-- 繁体中文内容 -->
+                <p>Breathe2Heal 應用中使用了以下音效資源，我們在此表示衷心的感謝：</p>
+
+                <h2>吸氣聲音</h2>
+                <ol>
+                    <li>
+                        <h3>罄</h3>
+                        <ul>
+                            <li>描述: 清脆的敲擊_叮__磬_單音</li>
+                            <li>作者: 聲音科學</li>
+                            <li>來源: <a href="https://www.aigei.com/space/478125" target="_blank">https://www.aigei.com/space/478125</a></li>
+                            <li>許可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>頌鈸</h3>
+                        <ul>
+                            <li>描述: Tibetan singing bowl</li>
+                            <li>作者: itinerantmonk108</li>
+                            <li>來源: <a href="https://freesound.org/s/553049/" target="_blank">https://freesound.org/s/553049/</a></li>
+                            <li>許可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>丁夏</h3>
+                        <ul>
+                            <li>描述: Tingsha Cymbal</li>
+                            <li>作者: steffcaffrey</li>
+                            <li>來源: <a href="https://freesound.org/s/435074/" target="_blank">https://freesound.org/s/435074/</a></li>
+                            <li>許可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2>呼氣聲音</h2>
+                <ol>
+                    <li>
+                        <h3>鼓</h3>
+                        <ul>
+                            <li>描述: 佛鼓</li>
+                            <li>作者: 瑞萊寶音樂</li>
+                            <li>來源: <a href="https://www.aigei.com/space/10070445" target="_blank">https://www.aigei.com/space/10070445</a></li>
+                            <li>授權碼: LC_172727118387</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>雨聲器</h3>
+                        <ul>
+                            <li>描述: rain stick</li>
+                            <li>作者: nytro</li>
+                            <li>來源: <a href="https://freesound.org/s/21567/" target="_blank">https://freesound.org/s/21567/</a></li>
+                            <li>許可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>銅鑼</h3>
+                        <ul>
+                            <li>描述: Orchestral Concert TamTam Gong</li>
+                            <li>作者: pjcohen</li>
+                            <li>來源: <a href="https://freesound.org/s/413621/" target="_blank">https://freesound.org/s/413621/</a></li>
+                            <li>許可: Attribution 4.0</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2>屏氣聲音</h2>
+                <ol>
+                    <li>
+                        <h3>水滴</h3>
+                        <ul>
+                            <li>描述: 水滴落下</li>
+                            <li>作者: 趙千儀</li>
+                            <li>來源: <a href="https://www.aigei.com/space/10350506" target="_blank">https://www.aigei.com/space/10350506</a></li>
+                            <li>許可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>木魚</h3>
+                        <ul>
+                            <li>描述: 木魚</li>
+                            <li>作者: 聲音科學</li>
+                            <li>來源: <a href="https://www.aigei.com/space/478125" target="_blank">https://www.aigei.com/space/478125</a></li>
+                            <li>許可: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>擊木</h3>
+                        <ul>
+                            <li>描述: Claves</li>
+                            <li>作者: juskiddink</li>
+                            <li>來源: <a href="https://freesound.org/s/130853/" target="_blank">https://freesound.org/s/130853/</a></li>
+                            <li>許可: Attribution 4.0</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2>許可說明</h2>
+                <ul>
+                    <li>Creative Commons 0 (CC0): 這些作品已被作者dedicat到公共領域。您可以複製、修改、分發和執行這些作品，甚至用於商業目的，都無需徵得許可。</li>
+                    <li>Attribution 4.0 International (CC BY 4.0): 您可以自由地分享和改編這些作品，即使是出於商業目的。但您必須給予適當的署名，提供許可證的鏈接，並指出是否進行了修改。</li>
+                </ul>
+
+                <h2>特別聲明</h2>
+                <p>"鼓" 音效由瑞萊寶音樂提供，我們已獲得授權使用。感謝瑞萊寶音樂的慷慨授權。</p>
+
+                <p>我們對所有音效創作者表示誠摯的感謝，感謝他們為 Breathe2Heal 應用增添了豐富的聽覺體驗！如果您認為我們的使用有任何問題，請聯系我們進行更正。</p>
+            </div>
+            <div id="acknowledgments-en" class="acknowledgments-content">
+                <!-- 英文内容 -->
+                <p>The following sound resources are used in the Breathe2Heal app, and we express our sincere gratitude here:</p>
+
+                <h2>Inhale Sounds</h2>
+                <ol>
+                    <li>
+                        <h3>Qing</h3>
+                        <ul>
+                            <li>Description: Clear tapping_ding__gong_single tone</li>
+                            <li>Author: Sound Science</li>
+                            <li>Source: <a href="https://www.aigei.com/space/478125" target="_blank">https://www.aigei.com/space/478125</a></li>
+                            <li>License: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Song Bowls</h3>
+                        <ul>
+                            <li>Description: Tibetan singing bowl</li>
+                            <li>Author: itinerantmonk108</li>
+                            <li>Source: <a href="https://freesound.org/s/553049/" target="_blank">https://freesound.org/s/553049/</a></li>
+                            <li>License: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Ding Xia</h3>
+                        <ul>
+                            <li>Description: Tingsha Cymbal</li>
+                            <li>Author: steffcaffrey</li>
+                            <li>Source: <a href="https://freesound.org/s/435074/" target="_blank">https://freesound.org/s/435074/</a></li>
+                            <li>License: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2>Exhale Sounds</h2>
+                <ol>
+                    <li>
+                        <h3>Drum</h3>
+                        <ul>
+                            <li>Description: Buddhist drum</li>
+                            <li>Author: Rui Lai Music</li>
+                            <li>Source: <a href="https://www.aigei.com/space/10070445" target="_blank">https://www.aigei.com/space/10070445</a></li>
+                            <li>Authorization Code: LC_172727118387</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Rain Stick</h3>
+                        <ul>
+                            <li>Description: rain stick</li>
+                            <li>Author: nytro</li>
+                            <li>Source: <a href="https://freesound.org/s/21567/" target="_blank">https://freesound.org/s/21567/</a></li>
+                            <li>License: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Tam-tam</h3>
+                        <ul>
+                            <li>Description: Orchestral Concert TamTam Gong</li>
+                            <li>Author: pjcohen</li>
+                            <li>Source: <a href="https://freesound.org/s/413621/" target="_blank">https://freesound.org/s/413621/</a></li>
+                            <li>License: Attribution 4.0</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2>Hold Breath Sounds</h2>
+                <ol>
+                    <li>
+                        <h3>Water Drops</h3>
+                        <ul>
+                            <li>Description: Water drops</li>
+                            <li>Author: Zhao Qianyi</li>
+                            <li>Source: <a href="https://www.aigei.com/space/10350506" target="_blank">https://www.aigei.com/space/10350506</a></li>
+                            <li>License: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Woodfish</h3>
+                        <ul>
+                            <li>Description: Woodfish</li>
+                            <li>Author: Sound Science</li>
+                            <li>Source: <a href="https://www.aigei.com/space/478125" target="_blank">https://www.aigei.com/space/478125</a></li>
+                            <li>License: Creative Commons 0</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Claves</h3>
+                        <ul>
+                            <li>Description: Claves</li>
+                            <li>Author: juskiddink</li>
+                            <li>Source: <a href="https://freesound.org/s/130853/" target="_blank">https://freesound.org/s/130853/</a></li>
+                            <li>License: Attribution 4.0</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2>License Explanation</h2>
+                <ul>
+                    <li>Creative Commons 0 (CC0): These works have been dedicated to the public domain by the author. You can copy, modify, distribute, and perform these works, even for commercial purposes, without permission.</li>
+                    <li>Attribution 4.0 International (CC BY 4.0): You are free to share and adapt these works, even for commercial purposes. However, you must give appropriate credit, provide a link to the license, and indicate if changes were made.</li>
+                </ul>
+
+                <h2>Special Statement</h2>
+                <p>The "Drum" sound effect is provided by Rui Lai Music, and we have obtained authorization to use it. Thank you to Rui Lai Music for their generous authorization.</p>
+
+                <p>We express our sincere gratitude to all sound creators for adding rich auditory experiences to the Breathe2Heal app! If you have any concerns about our use, please contact us for correction.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 清醒呼吸 2024 <span class="separator">|</span> <a href="/privacy-policy/">隐私政策</a></p>
+        <p>&copy; 清醒呼吸 2024 <span class="separator">|</span> <a href="/privacy-policy/">隐私政策</a> <span class="separator">|</span> <a href="/acknowledgments/">致谢</a></p>
     </footer>
 
     <script src="/assets/js/main.js"></script>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.acknowledgments-content').forEach(el => el.classList.remove('active'));
+            document.getElementById('acknowledgments-' + lang).classList.add('active');
+        }
+    </script>
 </body>
 
 </html>
