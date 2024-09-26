@@ -304,6 +304,22 @@ footer a:hover {
     text-align: left;
 }
 
+.acknowledgments-page #acknowledgments p, 
+.acknowledgments-page #acknowledgments ul, 
+.acknowledgments-page #acknowledgments ol {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* 确保页脚样式在致谢页面上也能正确应用 */
+.acknowledgments-page footer p {
+    font-size: 14px;
+    color: #86868b;
+    margin: 0;
+    line-height: 1.4;
+}
+
 .acknowledgments-page h1 {
     font-size: 28px;
     margin-bottom: 20px;
