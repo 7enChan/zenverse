@@ -309,7 +309,7 @@ footer a {
     margin-bottom: 10px;
 }
 
-.acknowledgments-page p, .acknowledgments-page ul, .acknowledgments-page ol {
+.acknowledgments-page p:not(footer p), .acknowledgments-page ul, .acknowledgments-page ol {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
