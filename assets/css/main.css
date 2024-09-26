@@ -73,6 +73,34 @@ main {
   padding-top: 54px; /* 调整为与header高度一致 */
 }
 
+/* 页脚样式 */
+footer {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #86868b;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+footer a {
+  color: #515154;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* 内容页面通用样式 (用于acknowledgments和privacy-policy) */
 .content-page {
   max-width: 800px;
@@ -118,34 +146,6 @@ main {
   text-decoration: underline;
 }
 
-/* 页脚样式 */
-footer {
-  background-color: transparent;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 12px;
-  line-height: 1.33337;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  color: #86868b;
-}
-
-footer p {
-  font-size: 12px;
-  margin: 0;
-}
-
-footer a {
-  color: #515154;
-  text-decoration: none;
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
 /* 响应式设计 */
 @media (max-width: 768px) {
   .content-page {
@@ -167,4 +167,71 @@ footer a:hover {
   .content-page p, .content-page ul, .content-page ol {
     font-size: 14px;
   }
+}
+
+/* 主页特定样式 */
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 400;
+  letter-spacing: .011em;
+  margin-bottom: 30px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.app-store-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.app-store-button:hover {
+  background-color: #0051a5;
+}
+
+.apple-logo {
+  margin-right: 10px;
+}
+
+#app-preview {
+  padding: 50px 0;
+  background-color: var(--section-background);
+}
+
+.app-screenshots {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.app-screenshots img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
