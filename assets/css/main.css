@@ -54,6 +54,7 @@ nav {
   margin-right: 10px;
 }
 
+/* 修改 logo 样式 */
 .logo a {
   font-size: 21px;
   font-weight: normal;
@@ -62,7 +63,11 @@ nav {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 0; /* 移除这里的padding-top */
+}
+
+/* 移除 hover 时的下划线 */
+.logo a:hover {
+  text-decoration: none;
 }
 
 /* 主要内容样式 */
