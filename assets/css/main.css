@@ -354,3 +354,29 @@ footer span.separator {
     flex-basis: calc(25% - 15px);
   }
 }
+
+/* 修改以下部分 */
+.privacy-policy-page a,
+.acknowledgments-page a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.privacy-policy-page a:hover,
+.acknowledgments-page a:hover {
+  text-decoration: underline;
+}
+
+/* 添加以下新的样式 */
+.privacy-policy-page .logo a,
+.acknowledgments-page .logo a,
+.privacy-policy-page footer a,
+.acknowledgments-page footer a {
+  color: var(--text-color);
+}
+
+.privacy-policy-page footer a:hover,
+.acknowledgments-page footer a:hover {
+  color: #2d2d30;
+  text-decoration: none;
+}
