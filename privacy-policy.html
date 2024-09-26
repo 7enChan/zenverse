@@ -125,6 +125,11 @@
             document.querySelectorAll('.privacy-content').forEach(el => el.classList.remove('active'));
             document.getElementById('privacy-' + lang).classList.add('active');
         }
+
+        // 页面加载时默认显示简体中文
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage('zh-CN');
+        });
     </script>
 </body>
 

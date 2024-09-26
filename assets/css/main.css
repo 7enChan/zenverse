@@ -380,3 +380,13 @@ footer span.separator {
   color: #2d2d30;
   text-decoration: none;
 }
+
+.acknowledgments-content,
+.privacy-content {
+    display: none;
+}
+
+.acknowledgments-content.active,
+.privacy-content.active {
+    display: block;
+}

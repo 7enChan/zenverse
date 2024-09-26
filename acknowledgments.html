@@ -31,7 +31,7 @@
                     <option value="en">English</option>
                 </select>
             </div>
-            <div id="acknowledgments-zh-CN" class="acknowledgments-content active">
+            <div id="acknowledgments-zh-CN" class="acknowledgments-content">
                 <!-- 简体中文内容 -->
                 <p>Breathe2Heal 应用中使用了以下音效资源，我们在此表示衷心的感谢：</p>
 
@@ -368,6 +368,11 @@
             document.querySelectorAll('.acknowledgments-content').forEach(el => el.classList.remove('active'));
             document.getElementById('acknowledgments-' + lang).classList.add('active');
         }
+
+        // 页面加载时默认显示简体中文
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage('zh-CN');
+        });
     </script>
 </body>
 
