@@ -338,26 +338,27 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
-.acknowledgments-page p, .acknowledgments-page ul, .acknowledgments-page ol {
+.acknowledgments-page #acknowledgments p, 
+.acknowledgments-page #acknowledgments ul, 
+.acknowledgments-page #acknowledgments ol {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.acknowledgments-page ul, .acknowledgments-page ol {
+.acknowledgments-page #acknowledgments ul, 
+.acknowledgments-page #acknowledgments ol {
     padding-left: 20px;
 }
 
-.acknowledgments-page a {
+.acknowledgments-page #acknowledgments a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-.acknowledgments-page a:hover {
+.acknowledgments-page #acknowledgments a:hover {
     text-decoration: underline;
 }
-
-/* 在文件末尾添加以下样式 */
 
 /* 404错误页面样式 */
 .error-page #error-404 {
