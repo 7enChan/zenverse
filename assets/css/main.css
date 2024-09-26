@@ -225,14 +225,14 @@ footer p {
 }
 
 footer a {
-  color: var(--primary-color);
+  color: #515154; /* 修改为稍深的灰色 */
   text-decoration: none;
   transition: color 0.3s ease;
   margin: 0 10px;
 }
 
 footer a:hover {
-  color: #005bbf;
+  color: #2d2d30; /* 鼠标悬停时的颜色，比正常状态更深 */
 }
 
 /* 响应式调整 */
