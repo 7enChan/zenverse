@@ -225,14 +225,18 @@ footer p {
 }
 
 footer a {
-  color: #515154; /* 修改为稍深的灰色 */
+  color: #515154;
   text-decoration: none;
   transition: color 0.3s ease;
-  margin: 0 10px;
 }
 
 footer a:hover {
-  color: #2d2d30; /* 鼠标悬停时的颜色，比正常状态更深 */
+  color: #2d2d30;
+}
+
+footer span.separator {
+  color: #86868b;
+  margin: 0 10px;
 }
 
 /* 响应式调整 */
@@ -245,7 +249,7 @@ footer a:hover {
     font-size: 12px;
   }
 
-  footer a {
+  footer span.separator {
     margin: 0 5px;
   }
 }
