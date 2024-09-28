@@ -152,7 +152,7 @@ p {
 }
 
 .google-play-button {
-  background-color: #000; /* 保持与App Store按钮一致的黑色背景 */
+  background-color: #3DDB86; /* 更改为Android的标志性绿色 */
 }
 
 .app-store-button:hover,
