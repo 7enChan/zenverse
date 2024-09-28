@@ -155,9 +155,12 @@ p {
   background-color: #3DDB86; /* 更改为Android的标志性绿色 */
 }
 
-.app-store-button:hover,
-.google-play-button:hover {
+.app-store-button:hover {
   background-color: #333;
+}
+
+.google-play-button:hover {
+  background-color: #62BB74;
 }
 
 .app-store-button svg,
