@@ -192,8 +192,13 @@ p {
 
 .app-screenshots {
   display: flex;
-  padding: 60px;
+  padding: 60px 20px;
   gap: 20px;
+}
+
+.app-screenshots::after {
+  content: '';
+  flex: 0 0 20px;
 }
 
 .app-screenshots img {
@@ -250,6 +255,10 @@ p {
   .app-screenshots {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .app-screenshots::after {
+    content: none;
   }
 }
 
