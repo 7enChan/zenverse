@@ -192,13 +192,13 @@ p {
 
 .app-screenshots {
   display: flex;
-  padding: 20px;
+  padding: 60px;
   gap: 20px;
 }
 
 .app-screenshots img {
   flex: 0 0 auto;
-  width: 200px;
+  width: 250px;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
