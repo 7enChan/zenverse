@@ -172,23 +172,85 @@ p {
 
 /* 应用预览样式 */
 #app-preview {
-  overflow: visible;
+  overflow: hidden;
   margin-top: -50px;
+  padding: 0;
+}
+
+.app-screenshots-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.app-screenshots-container::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 .app-screenshots {
   display: flex;
-  justify-content: center;
+  padding: 20px;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .app-screenshots img {
-  max-width: 200px;
+  flex: 0 0 auto;
+  width: 200px;
   height: auto;
   border-radius: 20px;
-  box-shadow: none;
-  flex-basis: calc(50% - 10px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  #hero, .error-page #error-404 {
+    padding-top: 100px;
+  }
+
+  #hero h1, .error-page #error-404 h1 {
+    font-size: 32px;
+    white-space: normal;
+  }
+
+  #hero p, .error-page #error-404 p {
+    font-size: 16px;
+  }
+
+  .app-screenshots img {
+    width: 150px;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer span.separator {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-screenshots img {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .app-screenshots-container {
+    overflow-x: visible;
+  }
+  
+  .app-screenshots {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* 页脚样式 */
@@ -333,87 +395,6 @@ footer p:last-child {
 }
 
 /* 响应式设计 */
-@media (max-width: 768px) {
-  #hero, .error-page #error-404 {
-    padding-top: 100px;
-  }
-
-  #hero h1, .error-page #error-404 h1 {
-    font-size: 32px;
-    white-space: normal;
-  }
-
-  #hero p, .error-page #error-404 p {
-    font-size: 16px;
-  }
-
-  .app-screenshots img {
-    max-width: 100%;
-    flex-basis: 100%;
-  }
-
-  footer {
-    padding: 20px 0;
-  }
-
-  footer p {
-    font-size: 12px;
-  }
-
-  footer span.separator {
-    margin: 0 5px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .app-screenshots img {
-    flex-basis: calc(50% - 10px);
-  }
-}
-
-@media (min-width: 1025px) {
-  .app-screenshots img {
-    flex-basis: calc(25% - 15px);
-  }
-}
-
-/* 修改以下部分 */
-.privacy-policy-page a,
-.acknowledgments-page a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.privacy-policy-page a:hover,
-.acknowledgments-page a:hover {
-  text-decoration: none;
-}
-
-/* 添加以下新的样式 */
-.privacy-policy-page .logo a,
-.acknowledgments-page .logo a,
-.privacy-policy-page footer a,
-.acknowledgments-page footer a {
-  color: var(--text-color);
-}
-
-.privacy-policy-page footer a:hover,
-.acknowledgments-page footer a:hover {
-  color: #2d2d30;
-  text-decoration: none;
-}
-
-.acknowledgments-content,
-.privacy-content {
-    display: none;
-}
-
-.acknowledgments-content.active,
-.privacy-content.active {
-    display: block;
-}
-
-/* 响应式设计部分可以添加以下内容 */
 @media (max-width: 768px) {
   .download-buttons {
     flex-direction: column;
