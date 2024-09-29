@@ -222,6 +222,12 @@ footer span.separator {
   margin: 0 10px;
 }
 
+footer p:last-child {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #86868b;
+}
+
 /* 隐私政策和致谢页面通用样式 */
 .privacy-policy-page #privacy-policy,
 .acknowledgments-page #acknowledgments {
