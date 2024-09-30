@@ -570,3 +570,16 @@ footer p:last-child {
     background-position: right 0.7em top 50%;
     background-size: 1em auto;
 }
+
+.logo-title a,
+.nav-title a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.logo-title a:active,
+.nav-title a:active {
+  opacity: 0.7;
+}
