@@ -36,7 +36,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  max-width: 980px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 22px;
   height: 54px;
@@ -175,6 +175,7 @@ p {
   overflow: hidden;
   margin-top: -50px;
   padding: 0;
+  width: 100%;
 }
 
 .app-screenshots-container {
@@ -192,25 +193,23 @@ p {
 
 .app-screenshots {
   display: flex;
-  padding: 60px 20px;
-  gap: 20px;
-}
-
-.app-screenshots::after {
-  content: '';
-  flex: 0 0 20px;
+  padding: 80px 0;
+  gap: 20px; /* 增加间距 */
+  justify-content: center;
+  max-width: 1024px; /* 增加最大宽度 */
+  margin: 0 auto;
 }
 
 .app-screenshots img {
   flex: 0 0 auto;
-  width: 220px;
+  width: 220px; /* 增加图片宽度 */
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* 响应式设计 */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #hero, .error-page #error-404 {
     padding-top: 100px;
   }
@@ -224,8 +223,13 @@ p {
     font-size: 16px;
   }
 
+  .app-screenshots {
+    justify-content: flex-start; /* 在小屏幕上左对齐 */
+    padding: 80px 20px; /* 添加左右内边距 */
+  }
+  
   .app-screenshots img {
-    width: 150px;
+    width: 180px;
   }
 
   footer {
@@ -242,8 +246,12 @@ p {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .app-screenshots {
+    justify-content: center; /* 在中等屏幕上居中 */
+  }
+  
   .app-screenshots img {
-    width: 180px;
+    width: 220px;
   }
 }
 
@@ -253,12 +261,12 @@ p {
   }
   
   .app-screenshots {
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* 保持单行 */
     justify-content: center;
   }
-
-  .app-screenshots::after {
-    content: none;
+  
+  .app-screenshots img {
+    width: 240px; /* 大屏幕上的宽度 */
   }
 }
 
