@@ -447,3 +447,13 @@ footer p:last-child {
     justify-content: center;
   }
 }
+
+.privacy-content,
+.acknowledgments-content {
+    display: none;
+}
+
+.privacy-content.active,
+.acknowledgments-content.active {
+    display: block;
+}
