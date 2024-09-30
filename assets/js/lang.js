@@ -1,3 +1,12 @@
+function getPreferredLanguage() {
+    const browserLang = navigator.language || navigator.userLanguage;
+    if (browserLang.startsWith('zh')) {
+        return browserLang.toLowerCase() === 'zh-tw' ? 'zh-TW' : 'zh-CN';
+    } else {
+        return 'en';
+    }
+}
+
 function switchLanguage(lang) {
     // 保存语言选择到 localStorage
     localStorage.setItem('preferredLanguage', lang);
@@ -53,14 +62,15 @@ function switchLanguage(lang) {
     });
 }
 
-// 页面加载时检查并应用保存的语言设置
+// 页面加载时检查并应用语言设置
 document.addEventListener('DOMContentLoaded', function() {
     const savedLanguage = localStorage.getItem('preferredLanguage');
     if (savedLanguage) {
         switchLanguage(savedLanguage);
     } else {
-        // 如果没有保存的语言设置，默认使用简体中文
-        switchLanguage('zh-CN');
+        // 如果没有保存的语言设置，使用浏览器语言
+        const detectedLanguage = getPreferredLanguage();
+        switchLanguage(detectedLanguage);
     }
 });
 
