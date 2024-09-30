@@ -383,6 +383,23 @@ footer p:last-child {
   padding-right: 2.5em;
 }
 
+/* 统一顶部标题样式 */
+.privacy-policy-page header .logo a,
+.acknowledgments-page header .logo a {
+  color: var(--text-color);
+}
+
+/* 统一底部 footer 样式 */
+.privacy-policy-page footer a,
+.acknowledgments-page footer a {
+  color: #86868b;
+}
+
+.privacy-policy-page footer a:hover,
+.acknowledgments-page footer a:hover {
+  text-decoration: none;
+}
+
 /* 404错误页面样式 */
 .error-page #error-404 {
   text-align: center;
