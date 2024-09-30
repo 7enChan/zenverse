@@ -115,16 +115,16 @@ p {
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 20px;
-  white-space: nowrap;
-  overflow: visible;
-  text-overflow: clip;
-  max-width: 100%;
+  max-width: 100%; /* 确保标题不会超出容器 */
+  word-wrap: break-word; /* 允许长单词换行 */
+  overflow-wrap: break-word; /* 现代浏览器中更推荐使用 */
 }
 
 #hero p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
+  max-width: 100%; /* 确保段落不会超出容器 */
 }
 
 .download-buttons {
@@ -271,7 +271,7 @@ p {
   }
   
   .app-screenshots img {
-    width: calc((100% - 60px) / 4); /* 4张图片，3个间隔 */
+    width: calc((100% - 60px) / 4); /* 4张图���，3个间隔 */
   }
 }
 
@@ -462,4 +462,8 @@ footer p:last-child {
 
 .content.active {
     display: block;
+}
+
+.content {
+  max-width: 100%; /* 确保内容不会超出容器 */
 }
