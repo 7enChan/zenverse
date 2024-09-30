@@ -583,3 +583,14 @@ footer p:last-child {
 .nav-title a:active {
   opacity: 0.7;
 }
+
+.language-selector select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.language-selector select:active {
+  opacity: 0.7;
+}
