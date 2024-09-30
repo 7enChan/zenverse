@@ -33,6 +33,12 @@ function switchLanguage(lang) {
 
     // 更新语言选择器
     document.querySelector('.language-selector select').value = lang;
+
+    // 控制ICP备案信息的显示/隐藏
+    const icpInfo = document.getElementById('icp-info');
+    if (icpInfo) {
+        icpInfo.style.display = lang === 'en' ? 'none' : 'block';
+    }
 }
 
 // 页面加载时默认显示简体中文
