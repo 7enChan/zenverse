@@ -210,7 +210,7 @@ p {
 }
 
 /* 响应式设计 */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #hero, .error-page #error-404 {
     padding-top: 100px;
   }
