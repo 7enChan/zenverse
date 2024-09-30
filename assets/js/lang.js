@@ -1,4 +1,7 @@
 function switchLanguage(lang) {
+    // 保存语言选择到 localStorage
+    localStorage.setItem('preferredLanguage', lang);
+
     // 切换内容可见性
     document.querySelectorAll('[data-lang]').forEach(el => {
         el.classList.remove('visible', 'active');
@@ -39,11 +42,26 @@ function switchLanguage(lang) {
     if (icpInfo) {
         icpInfo.style.display = lang === 'en' ? 'none' : 'block';
     }
+
+    // 切换图片
+    document.querySelectorAll('.app-screenshots img').forEach(img => {
+        if (img.getAttribute('data-lang') === lang) {
+            img.style.display = 'block';
+        } else {
+            img.style.display = 'none';
+        }
+    });
 }
 
-// 页面加载时默认显示简体中文
+// 页面加载时检查并应用保存的语言设置
 document.addEventListener('DOMContentLoaded', function() {
-    switchLanguage('zh-CN');
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        switchLanguage(savedLanguage);
+    } else {
+        // 如果没有保存的语言设置，默认使用简体中文
+        switchLanguage('zh-CN');
+    }
 });
 
 // 添加语言选择器的事件监听器
