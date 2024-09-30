@@ -23,7 +23,7 @@
                 <a href="/">清醒呼吸</a>
             </div>
             <div class="language-selector">
-                <select>
+                <select onchange="switchLanguage(this.value)">
                     <option value="zh-CN" selected>简体中文</option>
                     <option value="zh-TW">繁體中文</option>
                     <option value="en">English</option>
@@ -34,8 +34,18 @@
 
     <main>
         <section id="hero">
-            <h1>透过清醒的呼吸，随时回到自己</h1>
-            <p>清醒呼吸的设计理念源于古老的呼吸智慧，将经典呼吸法与古老乐器的声音完美融合。希望透过清醒的呼吸，帮你找回内心的平静与自在，回到真实的自己。</p>
+            <div id="content-zh-CN" class="content active">
+                <h1>透过清醒的呼吸，随时回到自己</h1>
+                <p>清醒呼吸的设计理念源于古老的呼吸智慧，将经典呼吸法与古老乐器的声音完美融合。希望透过清醒的呼吸，帮你找回内心的平静与自在，回到真实的自己。</p>
+            </div>
+            <div id="content-zh-TW" class="content">
+                <h1>透過清醒的呼吸，隨時回到自己</h1>
+                <p>清醒呼吸的設計理念源於古老的呼吸智慧，將經典呼吸法與古老樂器的聲音完美融合。希望透過清醒的呼吸，幫你找回內心的平靜與自在，回到真實的自己。</p>
+            </div>
+            <div id="content-en" class="content">
+                <h1>Return to Yourself Through Conscious Breathing</h1>
+                <p>The design concept of Breathe2Heal originates from ancient breathing wisdom, perfectly blending classic breathing techniques with the sounds of ancient instruments. We hope that through conscious breathing, you can find inner peace and ease, returning to your true self.</p>
+            </div>
             <div class="download-buttons">
                 <a href="https://apps.apple.com/app/%E6%B8%85%E9%86%92%E5%91%BC%E5%90%B8/id6680155354" class="app-store-button">
                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="apple-logo">
@@ -70,6 +80,17 @@
     </footer>
 
     <script src="/assets/js/main.js"></script>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+        }
+
+        // 页面加载时默认显示简体中文
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage('zh-CN');
+        });
+    </script>
 </body>
 
 </html>

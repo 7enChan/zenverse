@@ -19,13 +19,30 @@
                 <img src="/logo.png" alt="清醒呼吸 Logo">
                 <a href="/">清醒呼吸</a>
             </div>
+            <div class="language-selector">
+                <select onchange="switchLanguage(this.value)">
+                    <option value="zh-CN" selected>简体中文</option>
+                    <option value="zh-TW">繁體中文</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="error-404">
-            <h1>404 - 页面未找到</h1>
-            <p>抱歉，您请求的页面不存在。请检查URL是否正确，或返回<a href="/">主页</a>。</p>
+            <div id="content-zh-CN" class="content active">
+                <h1>404 - 页面未找到</h1>
+                <p>抱歉，您请求的页面不存在。请检查URL是否正确，或返回<a href="/">主页</a>。</p>
+            </div>
+            <div id="content-zh-TW" class="content">
+                <h1>404 - 頁面未找到</h1>
+                <p>抱歉，您請求的頁面不存在。請檢查URL是否正確，或返回<a href="/">主頁</a>。</p>
+            </div>
+            <div id="content-en" class="content">
+                <h1>404 - Page Not Found</h1>
+                <p>Sorry, the page you requested does not exist. Please check if the URL is correct, or return to the <a href="/">homepage</a>.</p>
+            </div>
         </section>
     </main>
 
@@ -35,6 +52,17 @@
     </footer>
 
     <script src="/assets/js/main.js"></script>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+        }
+
+        // 页面加载时默认显示简体中文
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage('zh-CN');
+        });
+    </script>
 </body> 
 
 </html>

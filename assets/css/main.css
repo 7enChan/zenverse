@@ -454,3 +454,12 @@ footer p:last-child {
 .acknowledgments-content.active {
     display: block;
 }
+
+/* 在文件末尾添加以下样式 */
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
