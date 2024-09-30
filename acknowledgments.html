@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>致谢 - 清醒呼吸</title>
+    <title id="page-title">致谢 - 清醒呼吸</title>
     <meta name="description" content="清醒呼吸应用中使用的音效资源致谢">
     <link rel="canonical" href="https://%E5%AE%99.space/acknowledgments/">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -14,25 +14,37 @@
 <body class="acknowledgments-page">
     <header>
         <nav>
-            <div class="logo">
+            <div class="logo-title">
                 <img src="/logo.png" alt="清醒呼吸 Logo">
-                <a href="/">清醒呼吸</a>
+                <div id="nav-title-zh-CN" class="nav-title active">
+                    <a href="/">清醒呼吸</a>
+                </div>
+                <div id="nav-title-zh-TW" class="nav-title">
+                    <a href="/">清醒呼吸</a>
+                </div>
+                <div id="nav-title-en" class="nav-title">
+                    <a href="/">Breathe2Heal</a>
+                </div>
+            </div>
+            <div class="language-selector">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="language-icon">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <select onchange="switchLanguage(this.value)">
+                    <option value="zh-CN" selected>简体中文</option>
+                    <option value="zh-TW">繁體中文</option>
+                    <option value="en">English</option>
+                </select>
             </div>
         </nav>
     </header>
 
     <main>
         <section id="acknowledgments">
-            <h1>致谢</h1>
-            <div class="language-selector">
-                <select onchange="switchLanguage(this.value)">
-                    <option value="zh-CN">简体中文</option>
-                    <option value="zh-TW">繁體中文</option>
-                    <option value="en">English</option>
-                </select>
-            </div>
-            <div id="acknowledgments-zh-CN" class="acknowledgments-content">
-                <!-- 简体中文内容 -->
+            <div class="content" data-lang="zh-CN">
+                <h1>致谢</h1>
                 <p>清醒呼吸应用中使用了以下音效资源，我们在此表示衷心的感谢：</p>
 
                 <h2>吸气声音</h2>
@@ -139,8 +151,8 @@
 
                 <p>我们对所有音效创作者表示诚挚的感谢，感谢他们为清醒呼吸应用增添了丰富的听觉体验！如果您认为我们的使用有任何问题，请联系我们进行更正。</p>
             </div>
-            <div id="acknowledgments-zh-TW" class="acknowledgments-content">
-                <!-- 繁体中文内容 -->
+            <div class="content" data-lang="zh-TW">
+                <h1>致謝</h1>
                 <p>清醒呼吸應用中使用了以下音效資源，我們在此表示衷心的感謝：</p>
 
                 <h2>吸氣聲音</h2>
@@ -245,11 +257,11 @@
                 <h2>特別聲明</h2>
                 <p>"鼓" 音效由瑞萊寶音樂提供，我們已獲得授權使用。感謝瑞萊寶音樂的慷慨授權。</p>
 
-                <p>我們對所有音效創作者表示誠摯的感謝，感謝他們為 清醒呼吸應用增添了豐富的聽覺體驗！如果您認為我們的使用有任何問題，請聯系我們進行更正。</p>
+                <p>我們對所有音效創作者表示誠摯的感謝，感謝他們為 清醒呼吸應用增添了豐富的聽覺體驗！如果您認為我們使用有任何問題，請聯系我們進行更正。</p>
             </div>
-            <div id="acknowledgments-en" class="acknowledgments-content">
-                <!-- 英文内容 -->
-                <p>The following sound resources are used in the Breathe2Heal app, and we express our sincere gratitude here:</p>
+            <div class="content" data-lang="en">
+                <h1>Acknowledgments</h1>
+                <p>The Breathe2Heal app uses the following sound resources, and we express our sincere gratitude:</p>
 
                 <h2>Inhale Sounds</h2>
                 <ol>
@@ -359,22 +371,24 @@
     </main>
 
     <footer>
-        <p>&copy; 清醒呼吸 2024 <span class="separator">|</span> <a href="/privacy-policy/">隐私政策</a> <span class="separator">|</span> <a href="/acknowledgments/">致谢</a></p>
+        <p>
+            <span id="footer-copyright-zh-CN" class="footer-text active">&copy; 清醒呼吸 2024</span>
+            <span id="footer-copyright-zh-TW" class="footer-text">&copy; 清醒呼吸 2024</span>
+            <span id="footer-copyright-en" class="footer-text">&copy; Breathe2Heal 2024</span>
+            <span class="separator">|</span>
+            <a href="/privacy-policy/" id="footer-privacy-zh-CN" class="footer-text active">隐私政策</a>
+            <a href="/privacy-policy/" id="footer-privacy-zh-TW" class="footer-text">隱私政策</a>
+            <a href="/privacy-policy/" id="footer-privacy-en" class="footer-text">Privacy Policy</a>
+            <span class="separator">|</span>
+            <a href="/acknowledgments/" id="footer-acknowledgments-zh-CN" class="footer-text active">致谢</a>
+            <a href="/acknowledgments/" id="footer-acknowledgments-zh-TW" class="footer-text">致謝</a>
+            <a href="/acknowledgments/" id="footer-acknowledgments-en" class="footer-text">Acknowledgments</a>
+        </p>
         <p>京ICP备2024087871号-2</p>
     </footer>
 
     <script src="/assets/js/main.js"></script>
-    <script>
-        function switchLanguage(lang) {
-            document.querySelectorAll('.acknowledgments-content').forEach(el => el.classList.remove('active'));
-            document.getElementById('acknowledgments-' + lang).classList.add('active');
-        }
-
-        // 页面加载时默认显示简体中文
-        document.addEventListener('DOMContentLoaded', function() {
-            switchLanguage('zh-CN');
-        });
-    </script>
+    <script src="/assets/js/lang.js"></script>
 </body>
 
 </html>

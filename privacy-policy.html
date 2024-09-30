@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>隐私政策 - 清醒呼吸</title>
+    <title id="page-title">隐私政策 - 清醒呼吸</title>
     <meta name="description" content="清醒呼吸APP隐私政策">
     <link rel="canonical" href="https://%E5%AE%99.space/privacy-policy/">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -14,11 +14,24 @@
 <body class="privacy-policy-page">
     <header>
         <nav>
-            <div class="logo">
+            <div class="logo-title">
                 <img src="/logo.png" alt="清醒呼吸 Logo">
-                <a href="/">清醒呼吸</a>
+                <div id="nav-title-zh-CN" class="nav-title active">
+                    <a href="/">清醒呼吸</a>
+                </div>
+                <div id="nav-title-zh-TW" class="nav-title">
+                    <a href="/">清醒呼吸</a>
+                </div>
+                <div id="nav-title-en" class="nav-title">
+                    <a href="/">Breathe2Heal</a>
+                </div>
             </div>
             <div class="language-selector">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="language-icon">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
                 <select onchange="switchLanguage(this.value)">
                     <option value="zh-CN" selected>简体中文</option>
                     <option value="zh-TW">繁體中文</option>
@@ -30,8 +43,10 @@
 
     <main>
         <section id="privacy-policy">
-            <h1>隐私政策</h1>
-            <div id="privacy-zh-CN" class="privacy-content active">
+            <h1 class="title" data-lang="zh-CN">隐私政策</h1>
+            <h1 class="title" data-lang="zh-TW">隱私政策</h1>
+            <h1 class="title" data-lang="en">Privacy Policy</h1>
+            <div class="content" data-lang="zh-CN">
                 <h2>引言</h2>
                 <p>清醒呼吸（以下简称"我们"、"我们的"或"本应用"）尊重并保护所有使用服务用户的个人隐私权。本隐私政策旨在向您说明我们如何收集、使用、存储和保护您的个人信息。请您仔细阅读以下内容。</p>
                 
@@ -58,12 +73,12 @@
                 <h2>联系我们</h2>
                 <p>如果您对本隐私政策有任何疑问，请通过邮箱联系我们：<a href="mailto:zen@宙.space">zen@宙.space</a></p>
             </div>
-            <div id="privacy-zh-TW" class="privacy-content">
+            <div class="content" data-lang="zh-TW">
                 <h2>引言</h2>
                 <p>清醒呼吸（以下簡稱"我們"、"我們的"或"本應用"）尊重並保護所有使用服務用戶的個人隱私權。本隱私政策旨在向您說明我們如何收集、使、存儲和保護您的個人信息。請您仔細閱讀以下內容。</p>
                 
                 <h2>信息收集與使用</h2>
-                <p>清醒呼吸是一款呼吸練習應用，旨在幫助用戶進行呼吸練習。我們承諾保護您的隱私，並且不會收集任何個人身份信息。</p>
+                <p>清醒呼吸是一款呼吸練習應用，旨在幫助用戶進行呼吸練習。我們承諾保護您的隱私，並且不會收集何個人身份信息。</p>
                 
                 <h2>我們收集的信息</h2>
                 <ul>
@@ -85,7 +100,7 @@
                 <h2>聯繫我們</h2>
                 <p>如果您對本隱私政策有任何疑問，請通過電子郵件聯繫我們：<a href="mailto:zen@宙.space">zen@宙.space</a></p>
             </div>
-            <div id="privacy-en" class="privacy-content">
+            <div class="content" data-lang="en">
                 <h2>Introduction</h2>
                 <p>Breathe2Heal (hereinafter referred to as "we," "our," or "the app") respects and protects the personal privacy of all users of our service. This privacy policy is intended to inform you about how we collect, use, store, and protect your personal information. Please read the following content carefully.</p>
                 
@@ -116,22 +131,24 @@
     </main>
 
     <footer>
-        <p>&copy; 清醒呼吸 2024 <span class="separator">|</span> <a href="/privacy-policy/">隐私政策</a> <span class="separator">|</span> <a href="/acknowledgments/">致谢</a></p>
+        <p>
+            <span id="footer-copyright-zh-CN" class="footer-text active">&copy; 清醒呼吸 2024</span>
+            <span id="footer-copyright-zh-TW" class="footer-text">&copy; 清醒呼吸 2024</span>
+            <span id="footer-copyright-en" class="footer-text">&copy; Breathe2Heal 2024</span>
+            <span class="separator">|</span>
+            <a href="/privacy-policy/" id="footer-privacy-zh-CN" class="footer-text active">隐私政策</a>
+            <a href="/privacy-policy/" id="footer-privacy-zh-TW" class="footer-text">隱私政策</a>
+            <a href="/privacy-policy/" id="footer-privacy-en" class="footer-text">Privacy Policy</a>
+            <span class="separator">|</span>
+            <a href="/acknowledgments/" id="footer-acknowledgments-zh-CN" class="footer-text active">致谢</a>
+            <a href="/acknowledgments/" id="footer-acknowledgments-zh-TW" class="footer-text">致謝</a>
+            <a href="/acknowledgments/" id="footer-acknowledgments-en" class="footer-text">Acknowledgments</a>
+        </p>
         <p>京ICP备2024087871号-2</p>
     </footer>
 
     <script src="/assets/js/main.js"></script>
-    <script>
-        function switchLanguage(lang) {
-            document.querySelectorAll('.privacy-content').forEach(el => el.classList.remove('active'));
-            document.getElementById('privacy-' + lang).classList.add('active');
-        }
-
-        // 页面加载时默认显示简体中文
-        document.addEventListener('DOMContentLoaded', function() {
-            switchLanguage('zh-CN');
-        });
-    </script>
+    <script src="/assets/js/lang.js"></script>
 </body>
 
 </html>

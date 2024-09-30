@@ -271,7 +271,7 @@ p {
   }
   
   .app-screenshots img {
-    width: calc((100% - 60px) / 4); /* 4张图���，3个间隔 */
+    width: calc((100% - 60px) / 4); /* 4张图，3个间隔 */
   }
 }
 
@@ -445,13 +445,19 @@ footer p:last-child {
   }
 }
 
-.privacy-content,
-.acknowledgments-content {
+.content {
     display: none;
 }
 
-.privacy-content.active,
-.acknowledgments-content.active {
+.content.visible {
+    display: block;
+}
+
+.title {
+    display: none;
+}
+
+.title.visible {
     display: block;
 }
 
@@ -460,10 +466,87 @@ footer p:last-child {
     display: none;
 }
 
-.content.active {
+.content.visible {
     display: block;
 }
 
 .content {
   max-width: 100%; /* 确保内容不会超出容器 */
+}
+
+/* 在文件末尾添加以下样式 */
+.nav-title,
+.footer-text {
+    display: none;
+}
+
+.nav-title.active,
+.footer-text.active {
+    display: inline;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-title {
+    display: none;
+}
+
+.nav-title.active {
+    display: block;
+}
+
+.nav-title a {
+    font-size: 21px;
+    font-weight: normal;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* 在文件中添加或修改以下样式 */
+.title {
+    display: none;
+}
+
+.title.active {
+    display: block;
+}
+
+/* 在文件末尾添加以下样式 */
+.language-selector {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.language-icon {
+    margin-right: 8px;
+    color: var(--text-color);
+}
+
+.language-selector select {
+    padding: 5px 10px;
+    padding-right: 2.5em;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--entry);
+    color: var(--primary);
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%;
+    background-size: 1em auto;
 }
