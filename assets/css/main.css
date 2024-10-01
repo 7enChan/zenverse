@@ -560,8 +560,7 @@ footer p:last-child {
 }
 
 .language-selector select {
-    padding: 5px 10px;
-    padding-right: 2.5em;
+    padding: 5px 10px 5px 30px; /* 增加左侧内边距以容纳图标 */
     border: 1px solid var(--border);
     border-radius: 5px;
     background-color: var(--entry);
@@ -575,8 +574,22 @@ footer p:last-child {
     -moz-appearance: none;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
-    background-position: right 0.7em top 50%;
-    background-size: 1em auto;
+    background-position: right 0.7em top 50%, left 0.5em center; /* 添加左侧图标位置 */
+    background-size: 1em auto, 1em auto; /* 设置两个背景图像的大小 */
+    padding-right: 2.5em;
+}
+
+.language-icon {
+    position: absolute;
+    left: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* 防止图标干扰选择操作 */
+}
+
+/* 隐藏除了选中选项之外的其他选项中的图标 */
+.language-selector select option:not(:checked) .language-icon {
+    display: none;
 }
 
 .logo-title a,
@@ -601,4 +614,60 @@ footer p:last-child {
 
 .language-selector select:active {
   opacity: 0.7;
+}
+
+/* 修改 .language-selector 的样式 */
+.language-selector {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+/* 修改 select 的样式 */
+.language-selector select {
+    padding: 5px 10px 5px 30px; /* 左侧留出空间给图标 */
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--entry);
+    color: var(--text-color);
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%;
+    background-size: 1em auto;
+    padding-right: 2.5em;
+}
+
+/* 添加新的样式来显示语言图标 */
+.language-icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* 确保 SVG 图标可见 */
+.language-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: var(--text-color);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* 隐藏选项中的图标 */
+.language-selector select option .language-icon {
+    display: none;
 }
