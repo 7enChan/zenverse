@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <radialGradient id="breathingCircleGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-            <stop offset="0%" style="stop-color:rgb(255,204,0);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgb(255,204,0);stop-opacity:0.01" />
-        </radialGradient>
-    </defs>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48">
     <g>
-        <circle fill="url(#breathingCircleGradient)" cx="24" cy="24" r="24"></circle>
+      <circle cx="50%" cy="50%" r="50%" fill="#262625"/>
+  
+      <defs>
+        <radialGradient id="breathingCircleGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+          <stop offset="0%" style="stop-color:#FFB45A" />
+          <stop offset="100%" style="stop-color:#FFB45A" stop-opacity="0.01" />
+        </radialGradient>
+      </defs>
+      
+      <!-- 光球 -->
+      <circle cx="24" cy="24" r="24" fill="url(#breathingCircleGradient)" />
     </g>
-</svg>
+  </svg>
