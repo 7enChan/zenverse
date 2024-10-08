@@ -60,6 +60,12 @@ function switchLanguage(lang) {
             img.style.display = 'none';
         }
     });
+
+    // 更新域名
+    const domain = lang === 'en' ? 'breathe2heal.宙.space' : '清醒呼吸.宙.space';
+    document.querySelector('link[rel="canonical"]').href = `https://${domain}/`;
+    document.querySelector('meta[property="og:url"]').content = `https://${domain}/`;
+    document.querySelector('meta[property="og:image"]').content = `https://${domain}/images/og-image.jpg`;
 }
 
 // 页面加载时检查并应用语言设置

@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- 清醒呼吸 (中文版) -->
   <url>
-    <loc>https://%E5%AE%99.space/</loc>
+    <loc>https://清醒呼吸.宙.space/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://%E5%AE%99.space/privacy-policy/</loc>
+    <loc>https://清醒呼吸.宙.space/privacy-policy/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://%E5%AE%99.space/acknowledgments/</loc>
+    <loc>https://清醒呼吸.宙.space/acknowledgments/</loc>
+    <lastmod>2024-03-14T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Breathe2Heal (英文版) -->
+  <url>
+    <loc>https://breathe2heal.宙.space/</loc>
+    <lastmod>2024-03-14T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://breathe2heal.宙.space/privacy-policy/</loc>
+    <lastmod>2024-03-14T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://breathe2heal.宙.space/acknowledgments/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
