@@ -13,6 +13,22 @@
 # For more information about the robots.txt standard, see:
 # http://www.robotstxt.org/robotstxt.html
 
+# robots.txt for https://清醒呼吸.宙.space
+
+# Allow all robots full access
 User-agent: *
+Allow: /
 Crawl-delay: 10
-Disallow:
+
+# Baidu Spider specific rules
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
+
+# Google Bot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# Sitemap location
+Sitemap: https://清醒呼吸.宙.space/sitemap.xml
