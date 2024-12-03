@@ -111,20 +111,31 @@ p {
   margin: 0 auto;
 }
 
+#hero .content {
+  display: none;
+}
+
+#hero .content.visible,
+#hero .content.active {
+  display: block;
+}
+
 #hero h1 {
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 20px;
-  max-width: 100%; /* 确保标题不会超出容器 */
-  word-wrap: break-word; /* 允许长单词换行 */
-  overflow-wrap: break-word; /* 现代浏览器中更推荐使用 */
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 #hero p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
-  max-width: 100%; /* 确保段落不会超出容器 */
+  max-width: 100%;
+  color: var(--text-color);
+  opacity: 0.8;
 }
 
 .download-buttons {
