@@ -671,3 +671,13 @@ footer p:last-child {
 .language-selector select option .language-icon {
     display: none;
 }
+
+/* 语言切换相关样式 */
+[data-lang] {
+    display: none;
+}
+
+[data-lang].visible,
+[data-lang].active {
+    display: flex;
+}
