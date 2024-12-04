@@ -150,12 +150,15 @@ p {
 .google-play-button {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: center;
+  padding: 12px 24px;
+  min-width: 160px;
+  height: 48px;
   font-size: 18px;
   border-radius: 30px;
   text-decoration: none;
   color: #fff;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -167,7 +170,7 @@ p {
 }
 
 .google-play-button {
-  background-color: #3DDB86; /* 更改为Android的标志性绿色 */
+  background-color: #3DDB86;
 }
 
 .app-store-button:hover {
@@ -181,6 +184,7 @@ p {
 .app-store-button:active,
 .google-play-button:active {
   opacity: 0.7;
+  transform: scale(0.98);
 }
 
 .app-store-button svg,
@@ -188,6 +192,11 @@ p {
   margin-right: 10px;
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
+}
+
+.android-buttons {
+  display: contents;
 }
 
 /* 应用预览样式 */
@@ -310,9 +319,9 @@ p {
 footer {
   padding: 20px;
   text-align: center;
-  color: var(--text-color);
-  opacity: 0.8;
   font-size: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
 }
 
 footer p {
@@ -321,6 +330,8 @@ footer p {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin: 0;
+  line-height: 1.4;
 }
 
 footer .separator {
@@ -328,14 +339,24 @@ footer .separator {
   opacity: 0.5;
 }
 
-footer a {
+footer a,
+footer .footer-text {
   color: var(--text-color);
+  opacity: 0.8;
   text-decoration: none;
-  transition: opacity 0.3s;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 footer a:hover {
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+footer a:active {
+  opacity: 0.4;
 }
 
 footer .footer-text {
@@ -345,6 +366,12 @@ footer .footer-text {
 footer .footer-text.visible,
 footer .footer-text.active {
   display: inline;
+}
+
+#icp-info {
+  margin-top: 5px;
+  font-size: 12px;
+  opacity: 0.6;
 }
 
 /* 隐私政策和致谢页面通用样式 */
@@ -517,7 +544,7 @@ footer .footer-text.active {
 /* 统一底部 footer 样式 */
 .privacy-policy-page footer a,
 .acknowledgments-page footer a {
-  color: #86868b;
+  color: var(--text-color);
 }
 
 .privacy-policy-page footer a:hover,
@@ -526,23 +553,50 @@ footer .footer-text.active {
 }
 
 /* 404错误页面样式 */
-.error-page #error-404 {
+.error-page main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 20px;
+}
+
+#error-404 {
   text-align: center;
-  padding: 120px 20px 40px;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.error-page #error-404 h1 {
-  font-size: 48px;
-  line-height: 1.2;
-  margin-bottom: 20px;
+#error-404 .content {
+  display: none;
 }
 
-.error-page #error-404 p {
+#error-404 .content.visible,
+#error-404 .content.active {
+  display: block;
+}
+
+#error-404 h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+#error-404 p {
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 30px;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+#error-404 a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+#error-404 a:hover {
+  opacity: 0.7;
 }
 
 /* 响应式设计 */
