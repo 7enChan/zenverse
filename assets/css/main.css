@@ -306,49 +306,45 @@ p {
   }
 }
 
-/* 页脚样式 */
+/* Footer 样式 */
 footer {
-  background-color: var(--background-color);
+  padding: 20px;
   text-align: center;
-  padding: 30px 0;
-  margin-top: 50px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: 14px;
 }
 
 footer p {
-  font-size: 12px;
-  color: #86868b;
-  margin: 0;
-  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+footer .separator {
+  color: var(--text-color);
+  opacity: 0.5;
 }
 
 footer a {
-  color: #86868b;
+  color: var(--text-color);
   text-decoration: none;
-  transition: color 0.3s ease;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
+  transition: opacity 0.3s;
 }
 
 footer a:hover {
-  text-decoration: none;
-}
-
-footer a:active {
   opacity: 0.7;
 }
 
-footer span.separator {
-  color: #86868b;
-  margin: 0 10px;
+footer .footer-text {
+  display: none;
 }
 
-footer p:last-child {
-  margin-top: 5px;
-  font-size: 12px;
-  color: #86868b;
+footer .footer-text.visible,
+footer .footer-text.active {
+  display: inline;
 }
 
 /* 隐私政策和致谢页面通用样式 */
@@ -406,6 +402,86 @@ footer p:last-child {
 .privacy-policy-page a:hover,
 .acknowledgments-page a:hover {
   text-decoration: none;
+}
+
+.privacy-policy-page main,
+.acknowledgments-page main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+#privacy-policy,
+#acknowledgments {
+  text-align: left;
+}
+
+#privacy-policy .content,
+#acknowledgments .content {
+  display: none;
+}
+
+#privacy-policy .content.visible,
+#privacy-policy .content.active,
+#acknowledgments .content.visible,
+#acknowledgments .content.active {
+  display: block;
+}
+
+#privacy-policy h1,
+#acknowledgments h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#privacy-policy h2,
+#acknowledgments h2 {
+  font-size: 24px;
+  margin: 30px 0 15px;
+  color: var(--text-color);
+}
+
+#privacy-policy p,
+#acknowledgments p {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+#privacy-policy ul,
+#privacy-policy ol,
+#acknowledgments ul,
+#acknowledgments ol {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+#privacy-policy li,
+#acknowledgments li {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+#acknowledgments h4 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+  color: var(--text-color);
+}
+
+#acknowledgments ul {
+  list-style-type: disc;
+}
+
+#acknowledgments ol {
+  list-style-type: decimal;
+}
+
+#acknowledgments ul li {
+  margin: 5px 0;
 }
 
 .language-selector {
