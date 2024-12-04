@@ -332,11 +332,13 @@ footer p {
   flex-wrap: wrap;
   margin: 0;
   line-height: 1.4;
+  font-size: inherit;
 }
 
 footer .separator {
   color: var(--text-color);
   opacity: 0.5;
+  font-size: inherit;
 }
 
 footer a,
@@ -349,6 +351,7 @@ footer .footer-text {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+  font-size: inherit;
 }
 
 footer a:hover {
@@ -361,6 +364,7 @@ footer a:active {
 
 footer .footer-text {
   display: none;
+  font-size: inherit;
 }
 
 footer .footer-text.visible,
@@ -371,6 +375,7 @@ footer .footer-text.active {
 #icp-info {
   margin-top: 5px;
   opacity: 0.6;
+  font-size: inherit;
 }
 
 /* 隐私政策和致谢页面通用样式 */
@@ -378,7 +383,7 @@ footer .footer-text.active {
 .acknowledgments-page #acknowledgments {
   max-width: 800px;
   margin: 0 auto;
-  padding: 80px 20px 20px; /* 减少顶部padding */
+  padding: 80px 20px 20px;
   text-align: left;
 }
 
@@ -458,7 +463,7 @@ footer .footer-text.active {
 #acknowledgments h1 {
   font-size: 36px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 #privacy-policy h2,
