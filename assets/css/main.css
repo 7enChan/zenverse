@@ -151,13 +151,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
-  min-width: 160px;
-  height: 48px;
-  font-size: 18px;
-  border-radius: 30px;
   text-decoration: none;
-  color: #fff;
   transition: all 0.3s ease;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -165,34 +159,16 @@ p {
   user-select: none;
 }
 
-.app-store-button {
-  background-color: #000;
-}
-
-.google-play-button {
-  background-color: #3DDB86;
-}
-
-.app-store-button:hover {
-  background-color: #333;
-}
-
-.google-play-button:hover {
-  background-color: #62BB74;
+.app-store-button img,
+.google-play-button img {
+  height: 48px;
+  width: auto;
 }
 
 .app-store-button:active,
 .google-play-button:active {
   opacity: 0.7;
   transform: scale(0.98);
-}
-
-.app-store-button svg,
-.google-play-button svg {
-  margin-right: 10px;
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
 }
 
 .android-buttons {
