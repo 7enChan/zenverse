@@ -146,9 +146,14 @@ p {
   margin-bottom: 30px;
 }
 
+.app-store-buttons,
+.google-play-buttons {
+  position: relative;
+}
+
 .app-store-button,
 .google-play-button {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -157,6 +162,13 @@ p {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+.app-store-button.visible,
+.app-store-button.active,
+.google-play-button.visible,
+.google-play-button.active {
+  display: flex;
 }
 
 .app-store-button img,
