@@ -838,9 +838,5 @@ footer .footer-text.active {
     #privacy-policy a {
         word-break: break-all;
     }
-
-    #acknowledgments .content,
-    #privacy-policy .content {
-        padding: 0 15px;
-    }
+    
 }
