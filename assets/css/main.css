@@ -814,3 +814,28 @@ footer .footer-text.active {
 [data-lang].active {
     display: flex;
 }
+
+/* 添加移动端列表样式 */
+@media (max-width: 768px) {
+    #acknowledgments ol,
+    #acknowledgments ul {
+        padding-left: 20px;
+        margin: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #acknowledgments li {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        width: 100%;
+    }
+
+    #acknowledgments a {
+        word-break: break-all;
+    }
+
+    #acknowledgments .content {
+        padding: 0 15px;
+    }
+}
