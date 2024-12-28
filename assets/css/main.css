@@ -818,24 +818,29 @@ footer .footer-text.active {
 /* 添加移动端列表样式 */
 @media (max-width: 768px) {
     #acknowledgments ol,
-    #acknowledgments ul {
+    #acknowledgments ul,
+    #privacy-policy ol,
+    #privacy-policy ul {
         padding-left: 20px;
         margin: 10px 0;
         width: 100%;
         box-sizing: border-box;
     }
 
-    #acknowledgments li {
+    #acknowledgments li,
+    #privacy-policy li {
         word-wrap: break-word;
         overflow-wrap: break-word;
         width: 100%;
     }
 
-    #acknowledgments a {
+    #acknowledgments a,
+    #privacy-policy a {
         word-break: break-all;
     }
 
-    #acknowledgments .content {
+    #acknowledgments .content,
+    #privacy-policy .content {
         padding: 0 15px;
     }
 }
