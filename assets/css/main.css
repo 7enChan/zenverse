@@ -66,6 +66,13 @@ nav {
 }
 
 /* 主要内容样式 */
+.update-date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+    font-style: italic;
+}
+
 main {
   padding-top: 44px;
 }
