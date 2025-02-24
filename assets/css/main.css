@@ -148,18 +148,13 @@ p {
 .download-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.app-store-buttons,
-.google-play-buttons {
-  position: relative;
-}
-
-.app-store-button,
-.google-play-button {
+.download-button {
   display: none;
   align-items: center;
   justify-content: center;
