@@ -13,7 +13,7 @@
 # For more information about the robots.txt standard, see:
 # http://www.robotstxt.org/robotstxt.html
 
-# robots.txt for https://清醒呼吸.宙.space
+# robots.txt for https://宙.space
 
 # Allow all robots full access
 User-agent: *
@@ -31,4 +31,4 @@ Allow: /
 Crawl-delay: 5
 
 # Sitemap location
-Sitemap: https://清醒呼吸.宙.space/sitemap.xml
+Sitemap: https://宙.space/sitemap.xml
